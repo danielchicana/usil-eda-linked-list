@@ -1,5 +1,5 @@
-#ifndef __QUEUE_H__
-#define __QUEUE_H__
+#ifndef __LINKEDLIST_H__
+#define __LINKEDLIST_H__
 
 // #include
 // #include <vector>
@@ -17,14 +17,14 @@ class LinkedList
 
 // Comments #2
 template <typename T>
-void LinkedList<T>::add(T &elem)
+void LinkedList<T>::front(T &elem)
 {
 
 }
 
 // Comments #3
 template <typename T>
-T LinkedList<T>::remove()
+T LinkedList<T>::back()
 {
 
 }
