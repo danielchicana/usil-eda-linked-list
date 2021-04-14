@@ -13,13 +13,13 @@ class LinkedList
   public:
     T front(); // Retorna el elemento al comienzo
     T back(); // Retorna el elemento al final
-    void push_front(T); // Agrega un elemento al comienzo 
-    void push_back(T); // Agrega un elemento al final
-    void pop_front(); // Remueve el elemento al comienzo
-    void pop_back(); // Remueve el elemento al final
-    T operator[](int); // Retorna el elemento en la posición indicada
+    void push_front(T &elem); // Agrega un elemento al comienzo 
+    void push_back(T &elem); // Agrega un elemento al final
+    void pop_front(); // Remueve el elemento al comienzo pero no lo retorna
+    void pop_back(); // Remueve el elemento al final pero no lo retorna
+    T operator[](size_t pos); // Retorna el elemento en la posición indicada
     bool empty(); // Retorna si la lista está vacía o no
-    int size(); // Retorna el tamaño de la lista 
+    size_t size(); // Retorna el tamaño de la lista 
     void clear(); // Elimina todos los elementos de la lista
     void sort(); // Ordena la lista
     void reverse(); // Revierte la lista
